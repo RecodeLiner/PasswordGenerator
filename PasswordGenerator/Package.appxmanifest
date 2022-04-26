@@ -9,11 +9,11 @@
   <Identity
     Name="b0850f9f-7038-42d5-b92c-bcff15685163"
     Publisher="CN=Samir"
-    Version="1.0.0.0" />
+    Version="1.1.1298.0" />
 
   <Properties>
     <DisplayName>PasswordGenerator</DisplayName>
-    <PublisherDisplayName>Samir</PublisherDisplayName>
+    <PublisherDisplayName>LuckerCO</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -38,6 +38,9 @@
         Square44x44Logo="Assets\Square44x44Logo.png">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape"/>
+          <uap:Rotation Preference="landscapeFlipped"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>
