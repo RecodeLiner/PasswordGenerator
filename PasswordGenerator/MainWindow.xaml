@@ -1,0 +1,21 @@
+﻿<Window
+    x:Class="PasswordGenerator.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <!-- все пустые textblock нужны чисто под расстояние между элементами -->
+        <!-- Textblock - строка для вывода, TextBox - для ввода, Button - кнопки -->
+        <TextBlock>Введите длину пароля</TextBlock>
+        <TextBlock/>
+        <TextBox x:Name="length" BeforeTextChanging="Length_OnBeforeTextChanging"/>
+        <TextBlock/>
+        <TextBlock x:Name="pass"/>
+        <TextBlock/>
+        <Button Click="Generate_click">Сгенерировать</Button>
+        <TextBlock/>
+        <Button Click="ClipSet_click">Скопировать</Button>
+    </StackPanel>
+</Window>
