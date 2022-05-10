@@ -8,7 +8,7 @@
     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
         <!-- все пустые textblock нужны чисто под расстояние между элементами -->
         <!-- Textblock - строка для вывода, TextBox - для ввода, Button - кнопки -->
-        <TextBlock>Введите длину пароля</TextBlock>
+        <TextBlock>Введите длину пароля (По-умолчанию 12):</TextBlock>
         <TextBlock/>
         <TextBox x:Name="length" BeforeTextChanging="Length_OnBeforeTextChanging"/>
         <TextBlock/>

@@ -34,7 +34,12 @@ namespace PasswordGenerator
                 //Присвоение field длины пароля значения из TextBox путём конвертации String в Int32.
                 _length = Convert.ToInt32(length.Text);
             }
-            
+            else if (String.IsNullOrEmpty(length.Text) == true)
+            {
+                //Присвоение field длины пароля значения по умолчанию.
+                _length = 12;
+            }
+
             //Проверка на то, что длина пароля не превышает максимальной длины и не меньше нуля.
             if (_length is <= MaxLength and > 0)
             {
